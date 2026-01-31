@@ -22,8 +22,7 @@ th, td {
 
 th {
   background: #222;
-  color: white;
-  cursor: pointer;
+  color: #fff;
 }
 
 /* 1 dòng trắng – 1 dòng xám */
@@ -34,11 +33,39 @@ tbody tr:nth-child(even) {
   background: #f2f2f2;
 }
 
-img {
+/* IMAGE + DESCRIPTION */
+.img-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.img-wrapper img {
   width: 80px;
   height: 80px;
-  object-fit: contain;
-  background: #fff;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Tooltip mô tả */
+.img-desc {
+  display: none;
+  position: absolute;
+  bottom: 105%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 260px;
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  font-size: 13px;
+  border-radius: 6px;
+  text-align: left;
+  z-index: 100;
+}
+
+.img-wrapper:hover .img-desc {
+  display: block;
 }
 
 #pagination {
@@ -46,7 +73,7 @@ img {
 }
 
 #pagination button {
-  padding: 5px 10px;
   margin: 2px;
+  padding: 5px 10px;
   cursor: pointer;
 }
