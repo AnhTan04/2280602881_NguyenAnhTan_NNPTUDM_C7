@@ -51,7 +51,7 @@ tbody tr:nth-child(even) {
 .img-desc {
   display: none;
   position: absolute;
-  top: 105%;           /* 👈 nằm dưới ảnh */
+  top: 105%;           
   left: 50%;
   transform: translateX(-50%);
   width: 260px;
