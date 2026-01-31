@@ -51,7 +51,7 @@ tbody tr:nth-child(even) {
 .img-desc {
   display: none;
   position: absolute;
-  bottom: 105%;
+  top: 105%;           /* 👈 nằm dưới ảnh */
   left: 50%;
   transform: translateX(-50%);
   width: 260px;
@@ -62,7 +62,9 @@ tbody tr:nth-child(even) {
   border-radius: 6px;
   text-align: left;
   z-index: 100;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
+
 
 .img-wrapper:hover .img-desc {
   display: block;
